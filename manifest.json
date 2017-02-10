@@ -1,0 +1,16 @@
+{
+  "name": "iRestaurants",
+  "short_name": "iRestaurants",
+  "icons": [
+    {
+      "src": "assets/icons/restaurant-256x256.png",
+      "sizes": "256x256",
+      "type": "image\/png"
+    }
+  ],
+  "display": "standalone",
+  "theme_color": "#b92b27",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "start_url": "./?utm_source=web_app_manifest"
+}
