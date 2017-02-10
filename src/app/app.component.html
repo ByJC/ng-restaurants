@@ -1,0 +1,28 @@
+<md-sidenav-container>
+  <md-toolbar color="primary">
+    <button md-icon-button (click)="sidenav.open()">
+          <md-icon class="button-icon">reorder</md-icon>
+    </button>
+    <span>iRestaurants</span>
+  </md-toolbar>
+  <app-progressbar></app-progressbar>
+  <md-sidenav #sidenav  mode="over" class="example-sidenav">
+    <button md-button (click)="sidenav.close()">
+          close
+    </button>
+
+    <ul>
+			<li (click)="sidenav.close()">
+				<a routerLink="/example">Example</a>
+			</li>
+			<li (click)="sidenav.close()">
+				<a routerLink="/">Restaurants</a>
+			</li>
+		</ul>
+  </md-sidenav>
+  <div class="my-content">
+
+    <router-outlet></router-outlet>
+
+  </div>
+</md-sidenav-container>

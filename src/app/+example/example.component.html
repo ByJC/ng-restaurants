@@ -1,0 +1,32 @@
+<md-card>
+    <h1>Exemples Appels Multiples</h1>
+    <h5> <a href="https://github.com/ByJC/ng-blog-posts/tree/master/src/app/%2Bexample" target="_blank">Lien vers le composant.</a></h5> 
+    <h5> <a href="https://medium.com/@jcfauvin/diff%C3%A9rentes-strat%C3%A9gies-pour-appeler-ses-services-angular2-48ca206cebdd#.sec7nzstn" target="_blank">Lien vers l'article.</a></h5> 
+</md-card>
+
+<md-card>
+    Ce composant sert à montrer comment faire plusieurs call http chainés et en parallèle.
+    <br/>
+    En utilisant forkJoin et flatMap.
+</md-card>
+
+<md-card>
+    <h4>Data A : Un post</h4>
+    {{dataA.body}}
+</md-card>
+
+<md-card>
+    <h4>Data B : l'utilisateur qui a écrit le post</h4>
+    <p>{{dataB.name}}</p>
+    <p>{{dataB.username}}</p>
+    <p>{{dataB.email}}</p>
+</md-card>
+
+<md-card>
+    <h4>Data C : les commentaires du post</h4>
+   
+    <div *ngFor="let comment of dataC">
+        <strong>{{comment.email}} : </strong>
+        <p>> {{comment.body}}</p>
+    </div>
+</md-card>

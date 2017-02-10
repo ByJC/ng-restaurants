@@ -1,0 +1,17 @@
+<md-input-container class="full-width">
+    <input md-input placeholder="Search for a restaurants">
+</md-input-container>
+
+<div class="flex-container" fxLayout="row" fxLayoutWrap="wrap">
+    <div fxFlex.xs="50%" fxFlex.sm="50%" fxFlex.md="33%" fxFlex.lg="25%" *ngFor="let restaurant of restaurants | async">
+        <md-card>
+            <md-card-header>
+                <md-card-title>{{restaurant.name}}</md-card-title>
+                <md-card-subtitle>{{restaurant.note}}</md-card-subtitle>
+            </md-card-header>
+        </md-card>
+    </div>
+</div>
+<span class="add-button">
+    <button md-fab ><md-icon>add</md-icon></button>
+</span>

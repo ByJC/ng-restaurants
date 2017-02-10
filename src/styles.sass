@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/core/theming/all-theme'
+
+
+// Include non-theme styles for core.
+@include md-core()
+
+// Define a theme.
+$primary: md-palette($md-indigo)
+$accent:  md-palette($md-amber, A200, A100, A400)
+
+$theme: md-light-theme($primary, $accent)
+
+// Include all theme styles for the components.
+@include angular-material-theme($theme)
+
+
+html, body 
+    height: 100%
+    margin: 0px
+
+md-card 
+    margin-top: 20px
+
+html, body, material-app, md-sidenav-container, .my-content
+    margin: 0
+    height: 100%
+
+.full-width
+    width: 100%
+
+.add-button
+    position: fixed
+    right: 20px
+    top: 25px
