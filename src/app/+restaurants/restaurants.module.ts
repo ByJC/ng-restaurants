@@ -7,6 +7,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { RestaurantsRoutingModule } from './restaurants.routing';
 import { RestaurantsComponent }   from './restaurants.component';
 
+import { RestaurantComponent } from './restaurant/restaurant.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,7 @@ import { RestaurantsComponent }   from './restaurants.component';
     FlexLayoutModule
   ],
   exports: [],
-  declarations: [RestaurantsComponent],
+  declarations: [RestaurantsComponent, RestaurantComponent],
   providers: [],
 })
 export class RestaurantsModule { }
